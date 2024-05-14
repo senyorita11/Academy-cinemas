@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academy Cinemas - Movie Update</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      
+        .formBorder {
+            border: 1px solid #333;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+
+        .formHeadings {
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        .inputBoxAddMovie,
+        .inputBoxMovieDescription {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #333;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .inputBoxAddMovieTimes {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #333;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .createUserButton {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .createUserButton:hover {
+            background-color: #575757;
+        }
+
+ </style>
+</head>
+
+<body>
+    <header>
+    </header>
+    <main>
+        <div class="container topGap"></div>
+
+        <div class="container">
+            <h2>MOVIE UPDATE</h2>
+            <div class="formBorder">
+                <form action="index.html" role="form">
+                    <div>
+                        <div class="form-group">
+                            <label class="formHeadings" for="title">Movie Title:</label>
+                            <input class="inputBoxAddMovie" type="text" id="title" placeholder="Enter Movie Title" minlength="1" maxlength="70" name="title" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="formHeadings" for="file">Poster Image:</label>
+                            <input class="inputBoxAddMovie" type="file" id="validatedCustomFile" name="myFile">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="formHeadings" for="description">Description:</label>
+                        <textarea class="inputBoxMovieDescription" type="text" id="description" placeholder="Enter movie's description" minlength="10" maxlength="70" name="description" required></textarea>
+                    </div>
+                    <div class="form-group">
+                            <label class="formHeadings" for="rating">Rating:</label>
+                            <input class="inputBoxAddMovie" type="number" id="rating" placeholder="Enter movie's rating" maxlength="3" name="rating" required>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="form-group">
+                            <label class="formHeadings" for="date">Date:</label>
+                            <input class="inputBoxAddMovie" type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="formHeadings" for="times">Times:</label>
+                            <select class="inputBoxAddMovieTimes" id="times" multiple required>
+                                <option value="">Select showtimes</option>
+                                  <option value="13:00">13:00</option>
+                                    <option value="13:30">13:30</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="15:00">15:00</option>
+                                    <option value="16:30">16:30</option>
+                                    <option value="18:00">18:00</option>
+                                    <option value="19:00">19:00</option>
+                                    <option value="20:30">20:30</option>
+                                    <option value="22:00">22:00</option>
+                                </select>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <div style="text-align: right;">
+                            <a href="index.html"></a><button type="submit" class="createUserButton"> Submit</button></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="container topGap"></div>
+    </main>
+
+    <footer>
+        <div class="footerBackground">
+            <footer>
+                <div style="display: flex; justify-content: space-around;">
+                    <div>
+                        <h4 class="footerTitle">Contact Us</h4>
+                        <p class="footerDes"><span class="footerDesLink">Get in touch</span><br><span class="footerDesLink">FAQ's</span><br>
+                            <a class="linkColour" href="https://www.facebook.com"><i class="fa fa-facebook facebookIcon"></i></a>
+                            <a class="linkColour" href="https://twitter.com"><i class="fa fa-twitter twitterIcon"></i></a>
+                            <a class="linkColour" href="https://www.youtube.com"><i class="fa fa-youtube-play youtubeIcon"></i></a>
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="footerTitle">About Academy Cinemas</h4>
+                        <p class="footerDes">
+                            <span class="footerDesLink">About Us</span><br>
+                            <span class="footerDesLink">Cinema Experience</span><br>
+                       </p>
+                    </div>
+                    <div>
+                        <h4 class="footerTitle">Legal</h4>
+                        <p class="footerDes">
+                            <span class="footerDesLink">Terms and Conditions</span><br>
+                            <span class="footerDesLink">Privacy Policy</span><br>
+                        </p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div class="footerDarkerBackground">
+            <img class="logoFooter" src="2.png" alt="Academy Cinemas Logo">
+        </div>
+    </footer>
+    <script src="navbar.js"></script>    
+</body>
+</html>
